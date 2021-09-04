@@ -1,0 +1,2207 @@
+/*
+Theme Name: Tema 1
+Theme URI: https://wordpress.org/themes/twentytwenty/
+Author: Hugo Gil
+Author URI: https://www.linkedin.com/in/hugogil95/
+Description: Primer Tema
+Tags: black, simple
+Version: 1.3
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700&display=swap");
+/* line 1, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_extend.scss */
+@font-face {
+  font-family: 'AvenirNextLTPro-Regular';
+  src: url('fonts/Avenir-Next-Font/AvenirNextLTPro-Regular.eot');
+  src: url('fonts/Avenir-Next-Font/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Avenir-Next-Font/AvenirNextLTPro-Regular.woff') format('woff'),
+  url('fonts/Avenir-Next-Font/AvenirNextLTPro-Regular.ttf') format('truetype'),
+  url('fonts/Avenir-Next-Font/AvenirNextLTPro-Regular.svg#AvenirNextLTPro-Regular') format('svg');
+}
+.flex-center-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+}
+
+/* Normal desktop :1200px. */
+/* Normal desktop :992px. */
+/* Tablet desktop :768px. */
+/* small mobile :320px. */
+/* Large Mobile :480px. */
+/* 1. Theme default css */
+/* line 5, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+body {
+  font-family: 'AvenirNextLTPro-Regular';
+  font-weight: normal;
+  font-style: normal;
+}
+.body {
+
+    max-width: 940px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+/* line 12, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.img {
+  max-width: 100%;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* line 16, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+a,
+.button {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* line 20, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+a:focus,
+.button:focus, button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+/* line 25, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 29, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+  text-decoration: none;
+  color: #1F1F1F;
+}
+
+/* line 36, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+a,
+button {
+  color: #1F1F1F;
+  outline: medium none;
+}
+
+/* line 41, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+h1, h2, h3, h4, h5 {
+  
+  color: #1F1F1F;
+}
+
+/* line 45, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+/* line 54, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 58, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+li {
+  list-style: none;
+}
+
+/* line 61, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 17px;
+  color: #cccccc;
+  margin-bottom: 13px;
+ 
+}
+
+/* line 70, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+label {
+  color: #7e7e7e;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* line 76, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+*::-moz-selection {
+  background: #444;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 81, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+::-moz-selection {
+  background: #444;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 86, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+::selection {
+  background: #444;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 91, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+*::-webkit-input-placeholder {
+  color: #cccccc;
+  font-size: 14px;
+  opacity: 1;
+}
+
+/* line 96, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+*:-ms-input-placeholder {
+  color: #cccccc;
+  font-size: 14px;
+  opacity: 1;
+}
+
+/* line 101, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+*::-ms-input-placeholder {
+  color: #cccccc;
+  font-size: 14px;
+  opacity: 1;
+}
+
+/* line 106, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+*::placeholder {
+  color: #cccccc;
+  font-size: 14px;
+  opacity: 1;
+}
+
+/* line 112, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+h3 {
+  font-size: 24px;
+}
+
+/* line 116, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.mb-65 {
+  margin-bottom: 67px;
+}
+
+/* line 120, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.black-bg {
+  background: #020c26 !important;
+}
+
+/* line 124, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.white-bg {
+  background: #ffffff;
+}
+
+/* line 127, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.gray-bg {
+  background: #f5f5f5;
+}
+
+/* line 132, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.bg-img-1 {
+  background-image: url(../img/slider/slider-img-1.jpg);
+}
+
+/* line 135, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.bg-img-2 {
+  background-image: url(../img/background-img/bg-img-2.jpg);
+}
+
+/* line 138, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.cta-bg-1 {
+  background-image: url(../img/background-img/bg-img-3.jpg);
+}
+
+/* line 143, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.overlay {
+  position: relative;
+  z-index: 0;
+}
+
+/* line 147, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.overlay::before {
+  position: absolute;
+  content: "";
+  background-color: #001D38;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: .7;
+}
+
+/* line 159, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.overlay2 {
+  position: relative;
+  z-index: 0;
+}
+
+/* line 163, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.overlay2::before {
+  position: absolute;
+  content: "";
+  background-color: #001D38;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+/* line 175, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.overlay_03 {
+  position: relative;
+  z-index: 0;
+}
+
+/* line 179, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.overlay_03::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #001D38;
+  opacity: .6;
+  content: '';
+  z-index: -1;
+}
+
+/* line 192, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.bradcam_overlay {
+  position: relative;
+  z-index: 0;
+}
+
+/* line 196, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.bradcam_overlay::before {
+  position: absolute;
+  content: "";
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5db2ff+0,7db9e8+100&1+24,0+96 */
+  background: -moz-linear-gradient(left, #5db2ff 0%, #65b4f9 24%, rgba(124, 185, 233, 0) 96%, rgba(125, 185, 232, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #5db2ff 0%, #65b4f9 24%, rgba(124, 185, 233, 0) 96%, rgba(125, 185, 232, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #5db2ff 0%, #65b4f9 24%, rgba(124, 185, 233, 0) 96%, rgba(125, 185, 232, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5db2ff', endColorstr='#007db9e8',GradientType=1 );
+  /* IE6-9 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 1;
+}
+
+/* line 212, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.section-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* line 216, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.pt-120 {
+  padding-top: 120px;
+}
+
+/* button style */
+/* line 222, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.owl-carousel .owl-nav div {
+  background: transparent;
+  height: 50px;
+  left: 0px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 50px;
+  color: #707070;
+  background-color: transparent;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  left: 50px;
+  font-size: 15px;
+  line-height: 50px;
+  border: 1px solid #707070;
+  left: 150px;
+}
+
+/* line 249, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.owl-carousel .owl-nav div.owl-next {
+  left: auto;
+  right: 150px;
+}
+
+/* line 254, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.owl-carousel .owl-nav div.owl-next i {
+  position: relative;
+  right: 0;
+}
+
+/* line 261, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.owl-carousel .owl-nav div.owl-prev i {
+  position: relative;
+  top: 0px;
+}
+
+/* line 271, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.owl-carousel:hover .owl-nav div {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* line 274, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.owl-carousel:hover .owl-nav div:hover {
+  color: #fff;
+  background: #5DB2FF;
+  border: 1px solid transparent;
+}
+
+/* line 284, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.mb-20px {
+  margin-bottom: 20px;
+}
+
+/* line 288, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.mb-55 {
+  margin-bottom: 55px;
+}
+
+/* line 291, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+/* line 294, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+/* line 299, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/theme-default.scss */
+.mb-60 {
+  margin-bottom: 50px !important;
+}
+
+/* line 1, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.boxed-btn {
+  background: #fff;
+  color: #131313;
+  display: inline-block;
+  padding: 18px 44px;
+
+  font-size: 14px;
+  font-weight: 400;
+  border: 0;
+  border: 1px solid #5DB2FF;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #5DB2FF !important;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* line 17, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.boxed-btn:hover {
+  background: #5DB2FF;
+  color: #fff !important;
+  border: 1px solid #5DB2FF;
+}
+
+/* line 22, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.boxed-btn:focus {
+  outline: none;
+}
+
+/* line 25, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.boxed-btn.large-width {
+  width: 220px;
+}
+
+/* line 29, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.boxed-btn3 {
+  background: -moz-linear-gradient(top, #0181f5 0%, rgba(93, 178, 255, 0.99) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #0181f5 0%, rgba(93, 178, 255, 0.99) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #0181f5 0%, rgba(93, 178, 255, 0.99) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0181f5', endColorstr='#fc5db2ff',GradientType=0 );
+  /* IE6-9 */
+  color: #fff;
+  display: inline-block;
+  padding: 19px 41px;
+ 
+  font-size: 15px;
+  font-weight: 500;
+  border: 0;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  text-align: center;
+  color: #fff !important;
+  text-transform: capitalize;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* line 52, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.boxed-btn3:hover {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0181f5+0,5db2ff+100&0.96+0,0.96+100 */
+  background: -moz-linear-gradient(right, rgba(1, 129, 245, 0.96) 0%, rgba(93, 178, 255, 0.96) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(right, rgba(1, 129, 245, 0.96) 0%, rgba(93, 178, 255, 0.96) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to left, rgba(1, 129, 245, 0.96) 0%, rgba(93, 178, 255, 0.96) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f50181f5', endColorstr='#f55db2ff',GradientType=0 );
+  /* IE6-9 */
+  color: #fff !important;
+}
+
+/* line 62, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.boxed-btn3:focus {
+  outline: none;
+}
+
+/* line 65, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.boxed-btn3.large-width {
+  width: 220px;
+}
+
+/* line 70, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.boxed-btn3-white {
+  color: #fff;
+  display: inline-block;
+  padding: 13px 27px;
+
+  font-size: 14px;
+  font-weight: 400;
+  border: 0;
+  border: 1px solid #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff !important;
+  text-transform: capitalize;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+/* line 87, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.boxed-btn3-white:hover {
+  background: #28AE61;
+  color: #fff !important;
+  border: 1px solid transparent;
+}
+
+/* line 92, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.boxed-btn3-white i {
+  margin-right: 2px;
+}
+
+/* line 95, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.boxed-btn3-white:focus {
+  outline: none;
+}
+
+/* line 98, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.boxed-btn3-white.large-width {
+  width: 220px;
+}
+
+/* line 103, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.boxed-btn3-line {
+  color: #5DB2FF !important;
+  display: inline-block;
+  padding: 14px 31px;
+
+  font-size: 15px;
+  font-weight: 500;
+  border: 0;
+  border: 1px solid #5DB2FF;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+/* line 119, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.boxed-btn3-line:hover {
+  background: #5DB2FF;
+  color: #fff !important;
+  border: 1px solid transparent;
+}
+
+/* line 124, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.boxed-btn3-line:focus {
+  outline: none;
+}
+
+/* line 127, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.boxed-btn3-line.large-width {
+  width: 220px;
+}
+
+/* line 131, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.boxed-btn2 {
+  background: transparent;
+  color: #fff;
+  display: inline-block;
+  padding: 18px 24px;
+  font-family: 'AvenirNextLTPro-Regular';
+  font-size: 14px;
+  font-weight: 400;
+  border: 0;
+  border: 1px solid #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* line 143, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.boxed-btn2:hover {
+  background: #fff;
+  color: #131313 !important;
+}
+
+/* line 147, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.boxed-btn2:focus {
+  outline: none;
+}
+
+/* line 151, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.line-button {
+  color: #919191;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  position: relative;
+  padding-right: 5px;
+  padding-bottom: 2px;
+}
+
+/* line 159, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.line-button::before {
+  position: absolute;
+  content: "";
+  background: #919191;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 168, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.line-button:hover {
+  color: #009DFF;
+}
+
+/* line 171, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.line-button:hover::before {
+  background: #009DFF;
+}
+
+/* line 175, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.book_now {
+  display: inline-block;
+  font-size: 14px;
+  color: #009DFF;
+  border: 1px solid #009DFF;
+  text-transform: capitalize;
+  padding: 10px 25px;
+}
+
+/* line 182, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_btn.scss */
+.book_now:hover {
+  background: #009DFF;
+  color: #fff;
+}
+
+/* line 2, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_section_title.scss */
+.section_title h3 {
+  font-size: 46px;
+  font-weight: 300;
+  line-height: 76px;
+  color: #001D38;
+  position: relative;
+  z-index: 0;
+  padding-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+  /* line 2, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_section_title.scss */
+  .section_title h3 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 2, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_section_title.scss */
+  .section_title h3 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 19, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_section_title.scss */
+  .section_title h3 br {
+    display: none;
+  }
+}
+
+/* line 25, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_section_title.scss */
+.section_title p {
+  font-size: 16px;
+  color: #727272;
+  line-height: 28px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+@media (max-width: 767px) {
+  /* line 31, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_section_title.scss */
+  .section_title p br {
+    display: none;
+  }
+}
+
+/* line 39, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_section_title.scss */
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  /* line 39, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_section_title.scss */
+  .mb-50 {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 4, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_slick-nav.scss */
+  .mobile_menu {
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    z-index: 9;
+  }
+}
+
+/* line 13, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_slick-nav.scss */
+.slicknav_menu .slicknav_nav {
+  background: #fff;
+  float: right;
+  margin-top: 0;
+  padding: 0;
+  width: 95%;
+  padding: 0;
+  border-radius: 0px;
+  margin-top: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 11px;
+}
+
+/* line 28, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_slick-nav.scss */
+.slicknav_menu .slicknav_nav a:hover {
+  background: transparent;
+  color: #fff;
+}
+
+/* line 32, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_slick-nav.scss */
+.slicknav_menu .slicknav_nav a.active {
+  color: #5DB2FF;
+}
+
+@media (max-width: 767px) {
+  /* line 35, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_slick-nav.scss */
+  .slicknav_menu .slicknav_nav a i {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 35, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_slick-nav.scss */
+  .slicknav_menu .slicknav_nav a i {
+    display: none;
+  }
+}
+
+/* line 44, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_slick-nav.scss */
+.slicknav_menu .slicknav_nav .slicknav_btn {
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 99;
+  border: 1px solid #ddd;
+  top: 3px;
+  right: 5px;
+  top: -36px;
+}
+
+/* line 55, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_slick-nav.scss */
+.slicknav_menu .slicknav_nav .slicknav_btn .slicknav_icon {
+  margin-right: 6px;
+  margin-top: 3px;
+  position: relative;
+  padding-bottom: 3px;
+  top: -11px;
+  right: -5px;
+}
+
+@media (max-width: 767px) {
+  /* line 12, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_slick-nav.scss */
+  .slicknav_menu {
+    margin-right: 0px;
+  }
+}
+
+/* line 72, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_slick-nav.scss */
+.slicknav_nav .slicknav_arrow {
+  float: right;
+  font-size: 22px;
+  position: relative;
+  top: -9px;
+}
+
+/* line 78, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_slick-nav.scss */
+.slicknav_btn {
+  background-color: #949691;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 99;
+  border: none;
+  border-radius: 3px;
+  top: 5px;
+ padding: 5px 9px;
+  right: 5px;
+  margin-top: -5px;
+  top: -28px;
+}
+
+/* line 92, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_slick-nav.scss */
+.slicknav_btn {
+  background-color: #949691;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 99;
+  border: none;
+  border-radius: 3px;
+  top: 5px;
+  padding: 5px 7px;
+  right: 0;
+  margin-top: -5px;
+  top: -33px;
+}
+
+/* line 1, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area {
+  left: 0;
+  right: 0;
+  width: 100%;
+  top: 0;
+  z-index: 9;
+  position: absolute;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+@media (max-width: 767px) {
+  /* line 1, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+  .header-area {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 1, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+  .header-area {
+    padding-top: 0;
+  }
+}
+
+/* line 17, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area {
+  padding: 13px 0;
+  background: #fff;
+
+}
+
+/* line 21, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area.details_nav_bg {
+  background: #727272;
+  padding-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  /* line 21, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+  .header-area .main-header-area.details_nav_bg {
+    padding-bottom: 10px;
+  }
+}
+
+/* line 28, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area.details_nav {
+  background: #001D38;
+}
+
+/* line 45, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area .logo-img {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  /* line 45, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+  .header-area .main-header-area .logo-img {
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 45, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+  .header-area .main-header-area .logo-img {
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* line 45, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+  .header-area .main-header-area .logo-img {
+    text-align: left;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 59, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+  .header-area .main-header-area .logo-img img {
+    width: 70px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 59, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+  .header-area .main-header-area .logo-img img {
+    width: 70px;
+  }
+}
+
+/* line 71, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area .Appointment {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  justify-content: flex-end;
+  -ms-flex-pack: flex-end;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* line 75, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+  .header-area .main-header-area .Appointment .search_button {
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  /* line 75, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+  .header-area .main-header-area .Appointment .search_button {
+    margin-right: 15px;
+  }
+}
+
+/* line 84, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area .Appointment .search_button a i {
+  color: #E8E8E8;
+}
+
+/* line 91, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area .Appointment .socail_links ul li {
+  display: inline-block;
+}
+
+/* line 94, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area .Appointment .socail_links ul li a {
+  color: #A8A7A0;
+  margin: 0 10px;
+  font-size: 15px;
+}
+
+/* line 98, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area .Appointment .socail_links ul li a:hover {
+  color: #fff;
+}
+
+/* line 105, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area .Appointment .book_btn {
+  margin-left: 30px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* line 105, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+  .header-area .main-header-area .Appointment .book_btn {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  /* line 105, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+  .header-area .main-header-area .Appointment .book_btn {
+    margin-left: 0;
+  }
+}
+
+/* line 113, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area .Appointment .book_btn a {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0181f5+0,5db2ff+100 */
+  background: #0181f5;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #0181f5 0%, #5db2ff 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #0181f5 0%, #5db2ff 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #0181f5 0%, #5db2ff 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0181f5', endColorstr='#5db2ff',GradientType=1 );
+  /* IE6-9 */
+  padding: 13px 26px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid transparent;
+  color: #fff;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* line 113, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+  .header-area .main-header-area .Appointment .book_btn a {
+    padding: 12px 20px;
+  }
+}
+
+/* line 130, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area .Appointment .book_btn a:hover {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0181f5+0,5db2ff+100&0.96+0,0.96+100 */
+  background: -moz-linear-gradient(right, rgba(1, 129, 245, 0.96) 0%, rgba(93, 178, 255, 0.96) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(right, rgba(1, 129, 245, 0.96) 0%, rgba(93, 178, 255, 0.96) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to left, rgba(1, 129, 245, 0.96) 0%, rgba(93, 178, 255, 0.96) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f50181f5', endColorstr='#f55db2ff',GradientType=0 );
+  /* IE6-9 */
+  color: #fff;
+  border: 1px solid #5DB2FF;
+}
+
+/* line 142, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu {
+  text-align: center;
+  padding: 12px 0;
+}
+
+/* line 146, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li {
+  display: inline-block;
+    position: relative;
+    padding: 10px 40px;
+
+}
+
+/* line 156, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li a {
+  color: #cccccc;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 500;
+  display: inline-block;
+  padding: 0px 0px 0px 0px;
+  font-family: 'AvenirNextLTPro-Regular';
+  position: relative;
+  text-transform: capitalize;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* line 156, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+  .header-area .main-header-area .main-menu ul li a {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  /* line 156, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+  .header-area .main-header-area .main-menu ul li a {
+    font-size: 15px;
+  }
+}
+
+/* line 175, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li a i {
+  font-size: 9px;
+}
+
+@media (max-width: 767px) {
+  /* line 175, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+  .header-area .main-header-area .main-menu ul li a i {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 175, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+  .header-area .main-header-area .main-menu ul li a i {
+    display: none !important;
+  }
+}
+
+/* line 184, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+/*.header-area .main-header-area .main-menu ul li a::before {
+  position: absolute;
+  content: "";
+  background: #5DB2FF;
+  width: 100%;
+  height: 3px;
+  bottom: -33px;
+  left: 0;
+  opacity: 0;
+  transform: scaleX(0);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+*/
+/* line 196, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li:hover {
+  opacity: 1;
+  background: #abca8b;;
+    padding: 10px 40px;
+    
+  
+}
+.header-area .main-header-area .main-menu ul li a:hover {
+color:#fff;
+  }
+
+/* line 201, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li.current_page_item{
+  opacity: 1;
+  background: #abca8b;;
+    padding: 10px 40px;
+    
+}
+.header-area .main-header-area .main-menu ul li.current_page_item  a{
+color:#fff;
+}
+
+/* line 210, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li .submenu {
+  position: absolute;
+  left: 0;
+  top: 160%;
+  background: #fff;
+  width: 200px;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
+  opacity: 0;
+  visibility: hidden;
+  text-align: left;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+}
+
+/* line 222, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li .submenu li {
+  display: block;
+}
+
+/* line 224, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li .submenu li a {
+  padding: 10px 15px;
+  position: inherit;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  display: block;
+  color: #000;
+}
+
+/* line 230, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li .submenu li a::before {
+  display: none;
+}
+
+/* line 234, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li .submenu li:hover a {
+  color: #000;
+}
+
+/* line 239, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li:hover > .submenu {
+  opacity: 1;
+  visibility: visible;
+  top: 150%;
+}
+
+/* line 244, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area .main-menu ul li:hover > a::before {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* line 248, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+
+
+/* line 254, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area.sticky {
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: -70px;
+  left: 0;
+  right: 0;
+  z-index: 990;
+  transform: translateY(70px);
+  transition: transform 500ms ease, background 500ms ease;
+  -webkit-transition: transform 500ms ease, background 500ms ease;
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.96);
+  background: #fff;
+}
+
+@media (max-width: 767px) {
+  /* line 254, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+  .header-area .main-header-area.sticky {
+    padding: 10px 10px;
+  }
+}
+
+/* line 282, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area.sticky .main-menu {
+  padding: 0;
+}
+
+/* line 285, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area.sticky .header_bottom_border {
+  border-bottom: none;
+}
+
+/* line 288, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area.sticky .header_bottom_border.white_border {
+  border-bottom: none !important;
+}
+
+/* line 294, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .main-header-area.sticky ul li a::before {
+  position: absolute;
+  content: "";
+  background: #5DB2FF;
+  width: 100%;
+  height: 3px;
+  bottom: -27px;
+  left: 0;
+  opacity: 0;
+  transform: scaleX(0);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* line 312, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .header-top_area {
+  padding: 12px 0;
+  background: #FFF;
+}
+
+@media (max-width: 767px) {
+  /* line 315, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+  .header-area .header-top_area .social_media_links {
+    text-align: center;
+  }
+}
+
+/* line 319, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .header-top_area .social_media_links a {
+  font-size: 15px;
+  color: #C7C7C7;
+  margin-right: 12px;
+}
+
+/* line 323, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .header-top_area .social_media_links a:hover {
+  color: #5DB2FF;
+}
+
+/* line 329, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .header-top_area .header_left p {
+  color: #727272;
+  font-weight: 400;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+/* line 336, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .header-top_area .short_contact_list {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  /* line 336, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+  .header-area .header-top_area .short_contact_list {
+    text-align: center;
+  }
+}
+
+/* line 342, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .header-top_area .short_contact_list ul li {
+  display: inline-block;
+}
+
+/* line 344, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .header-top_area .short_contact_list ul li a {
+  font-size: 13px;
+  color: #919191;
+  margin-right: 50px;
+}
+
+@media (max-width: 767px) {
+  /* line 344, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+  .header-area .header-top_area .short_contact_list ul li a {
+    margin-left: 0;
+    margin: 0 5px;
+  }
+}
+
+/* line 353, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .header-top_area .short_contact_list ul li a i {
+  color: #5DB2FF;
+  margin-right: 7px;
+}
+
+/* line 361, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_header.scss */
+.header-area .header-top_area .header_right.d-flex {
+  display: flex;
+  justify-content: flex-end;
+}
+
+//* line 1, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 6, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .footer_top {
+  padding-top: 145px;
+  padding-bottom: 129px;
+  background: #fff;
+}
+
+@media (max-width: 767px) {
+  /* line 6, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+  .footer .footer_top {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 14, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+  .footer .footer_top .footer_widget {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 14, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+  .footer .footer_top .footer_widget {
+    margin-bottom: 30px;
+  }
+}
+
+/* line 21, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .footer_top .footer_widget li a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  font-family: 'AvenirNextLTPro-Regular';
+  padding: 30px;
+
+
+}
+
+.footer .footer_top .footer_widget h3 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  font-family: 'AvenirNextLTPro-Regular';
+}
+
+@media (max-width: 767px) {
+  /* line 21, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+  .footer .footer_top .footer_widget li a {
+    margin-bottom: 20px;
+  }
+}
+
+  .footer .footer_top .footer_widget h3 {
+    margin-bottom: 20px;
+  }
+}
+
+/* line 31, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .footer_top .footer_widget .footer_logo {
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  /* line 31, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+  .footer .footer_top .footer_widget .footer_logo {
+    margin-bottom: 20px;
+  }
+}
+
+/* line 41, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .footer_top .footer_widget p {
+  color: #919191;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* line 47, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .footer_top .footer_widget p a {
+  color: #919191;
+}
+
+/* line 49, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .footer_top .footer_widget p a:hover {
+  color: #5DB2FF;
+}
+
+/* line 55, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .footer_top .footer_widget p.footer_text {
+  font-size: 16px;
+  color: #B2B2B2;
+  margin-bottom: 23px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* line 61, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .footer_top .footer_widget p.footer_text a.domain {
+  color: #B2B2B2;
+  font-weight: 400;
+}
+
+/* line 64, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .footer_top .footer_widget p.footer_text a.domain:hover {
+  color: #5DB2FF;
+  border-bottom: 1px solid #5DB2FF;
+}
+
+/* line 70, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .footer_top .footer_widget p.footer_text.doanar a {
+  font-weight: 500;
+  color: #B2B2B2;
+}
+
+/* line 74, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .footer_top .footer_widget p.footer_text.doanar a:hover {
+  color: #5DB2FF;
+  border-bottom: 1px solid #5DB2FF;
+}
+
+/* line 78, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .footer_top .footer_widget p.footer_text.doanar a.first {
+  margin-bottom: 10px;
+}
+
+/* line 86, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .footer_top .footer_widget ul li {
+  color: #919191;
+  font-size: 13px;
+  line-height: 42px;
+  display: inline-block;
+}
+
+
+
+/* line 99, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .footer_top .footer_widget .newsletter_form {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* line 102, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .footer_top .footer_widget .newsletter_form input {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  padding-left: 20px;
+  font-size: 15px;
+  color: #000;
+  border: none;
+  border: 1px solid #E8E8E8;
+  border-radius: 30px;
+}
+
+/* line 112, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .footer_top .footer_widget .newsletter_form input::placeholder {
+  font-size: 15px;
+  color: #919191;
+}
+
+/* line 117, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .footer_top .footer_widget .newsletter_form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 40px;
+  border: none;
+  font-size: 14px;
+  color: #fff;
+  background: #5DB2FF;
+  padding: 10px;
+  padding: 0 22px;
+  cursor: pointer;
+  border-radius: 30px;
+  top: 5px;
+  right: 5px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* line 136, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .footer_top .footer_widget .newsletter_text {
+  font-size: 13px;
+  color: #919191;
+  line-height: 26px;
+}
+
+/* line 143, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .copy-right_text {
+  padding-bottom: 30px;
+  background: #fff;
+}
+
+/* line 146, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .copy-right_text .footer_border {
+  border-top: 1px solid #E8E8E8;
+  padding-bottom: 30px;
+}
+
+/* line 150, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .copy-right_text .copy_right {
+  font-size: 15px;
+  color: #919191;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  /* line 150, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+  .footer .copy-right_text .copy_right {
+    font-size: 13px;
+  }
+}
+
+/* line 158, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .copy-right_text .copy_right a {
+  color: #5DB2FF;
+}
+
+/* line 163, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .socail_links {
+  margin-top: 47px;
+}
+
+@media (max-width: 767px) {
+  /* line 163, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+  .footer .socail_links {
+    margin-top: 30px;
+  }
+}
+
+/* line 169, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .socail_links ul li {
+  display: inline-block;
+}
+
+/* line 172, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .socail_links ul li a {
+  font-size: 15px;
+  color: #C3B2F0;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  background: transparent;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  line-height: 40px !important;
+  margin-right: 7px;
+  color: #FFFFFF;
+  line-height: 40px !important;
+  border: 1px solid #E8E8E8;
+  color: #E8E8E8;
+}
+
+/* line 187, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_footer.scss */
+.footer .socail_links ul li a:hover {
+  color: #fff !important;
+  background: #5DB2FF;
+  border-color: transparent;
+}
+
+
+
+/* estilos propios */
+
+.parallax-content {
+  width: 100%;
+ height: 500px;
+  background-size: cover;
+
+}
+.baner-content {
+/*background-image: url(img/clouds.png);*/
+    vertical-align: middle;
+       background-repeat: no-repeat;
+    opacity: 2;
+}
+.baner-content {
+  width: 100%;
+    padding-top: 26vh;
+    text-align: center;
+    
+}
+
+.baner-content .text-content {
+  text-align: center;
+}
+
+.baner-content .text-content h2 {
+      font-size: 20px;
+    font-weight: 600;
+    color: #434544;
+    font-family: 'Arial';
+}
+
+.baner-content .text-content h2 span {
+  font-weight: 700;
+  color: #33c1cf!important;
+}
+
+.baner-content .text-content h2 em {
+  font-style: normal;
+  font-weight: 700;
+  color: #f89624!important;
+}
+
+.baner-content .text-content p {
+  color: #949691;
+  font-size: 14px;
+  line-height: 19px;
+ 
+}
+
+.baner-content .text-content .primary-white-button {
+  margin-top: 25px;
+}
+
+.baner-content .text-content .primary-white-button a {
+  background: #abc98b;
+    padding: 15px 40px;
+    color:#fff;
+        font-size: 14px;
+}
+
+.primary-white-button2 a {
+background: #fff;
+    padding: 15px 40px;
+    color: #464646;
+    font-size: 14px;
+}
+
+.logo h3 {
+  font-size: 20px;
+color: #949691;
+font-weight: bold;
+font-family: 'AvenirNextLTPro-Regular';
+}
+
+.logo img {
+  width: 30%;
+  height: 10%;
+}
+
+ @media (max-width: 991.98px) {
+.logo img {
+  width: 15%;
+  height: 10%;
+}
+  }
+
+.feat{
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.feat h4{
+  margin-bottom: 50px;
+  color: #778391;
+  font-size: 24px;
+  font-family: 'AvenirNextLTPro-Regular';
+}
+
+.feat img{
+  width: 120px;
+height: 120px;
+  margin-bottom: 28px;
+  border-radius: 60px;
+
+
+}
+
+.feat p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #909090;
+    margin-bottom: 13px;
+    text-align: center;
+    font-family: 'AvenirNextLTPro-Regular';
+}
+.testimonio{
+  background: #f3fbfe;
+}
+.testimony-section {
+  position: relative;
+  border-top: 3.5px solid transparent;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: linear-gradient(90deg, #fff, #fff),
+    linear-gradient(to right, #8781bd 20%, #8ba4ca 20% 40%, #abca8b 40% 60%, #ffeb7c 60% 80%, #ff6138 80%);
+
+   }
+  .testimony-section .testimony-img {
+    display: block;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center; }
+  .testimony-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    opacity: .7;
+    background: #232931; }
+  .testimony-section .owl-carousel {
+    margin: 0; }
+  .testimony-section .owl-carousel .owl-stage-outer {
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative; }
+  .testimony-section .owl-nav {
+    position: absolute;
+    bottom: 60px !important;
+    left: 0;
+    right: 0;
+    margin: 0 auto; }
+    @media (max-width: 991.98px) {
+      .testimony-section .owl-nav {
+        display: none; } }
+    .testimony-section .owl-nav .owl-prev,
+    .testimony-section .owl-nav .owl-next {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background: #fff !important;
+      -moz-transition: all 0.7s ease;
+      -o-transition: all 0.7s ease;
+      -webkit-transition: all 0.7s ease;
+      -ms-transition: all 0.7s ease;
+      transition: all 0.7s ease;
+      opacity: 1; }
+      .testimony-section .owl-nav .owl-prev span:before,
+      .testimony-section .owl-nav .owl-next span:before {
+        font-size: 20px;
+        margin-top: 7px;
+        color: #000000; }
+    .testimony-section .owl-nav .owl-prev {
+      top: 0 !important;
+      right: 0 !important; }
+      @media (min-width: 992px) {
+        .testimony-section .owl-nav .owl-prev {
+          right: 61px !important; } }
+      .testimony-section .owl-nav .owl-prev:hover, .testimony-section .owl-nav .owl-prev:focus {
+        background: #000000 !important;
+        outline: none !important; }
+        .testimony-section .owl-nav .owl-prev:hover span:before, .testimony-section .owl-nav .owl-prev:focus span:before {
+          font-size: 20px;
+          margin-top: 7px;
+          color: #fff; }
+    .testimony-section .owl-nav .owl-next {
+      top: 0 !important;
+      right: 0 !important; }
+      @media (min-width: 992px) {
+        .testimony-section .owl-nav .owl-next {
+          right: 0 !important; } }
+      .testimony-section .owl-nav .owl-next:hover, .testimony-section .owl-nav .owl-next:focus {
+        background: #000000 !important;
+        outline: none !important; }
+        .testimony-section .owl-nav .owl-next:hover span:before, .testimony-section .owl-nav .owl-next:focus span:before {
+          font-size: 24px;
+          margin-top: 7px;
+          color: #fff; }
+  .testimony-section .owl-dots {
+    text-align: left; }
+    .testimony-section .owl-dots .owl-dot {
+      width: 10px;
+      height: 10px;
+      margin: 5px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.1); }
+      .testimony-section .owl-dots .owl-dot.active {
+        background: #bf925b; }
+
+.testimony-wrap {
+  display: block;
+  position: relative;
+  font-size: 20px; }
+
+  .testimony-wrap a.enlace {
+        color: #000;
+        text-decoration: underline;
+        font-size: 14px;
+    }
+
+ .testimony-wrap .user-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 40px;
+    position: relative;
+    background-position: top;
+}
+    .testimony-wrap .user-img .quote {
+      position: absolute;
+      bottom: -10px;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      background: #bf925b;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%; }
+      .testimony-wrap .user-img .quote i {
+        color: #fff; }
+  .testimony-wrap .text {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px; }
+  .testimony-wrap .name {
+    font-weight: 400;
+    margin-bottom: 0;
+    color: #bfeaff;
+    font-weight: 700;
+    font-size: 17px; }
+  .testimony-wrap .position {
+    font-size: 13px;
+    color: #949691;
+    letter-spacing: 1px; }
+
+    p:empty {
+  display: none;
+}
+
+
+.heading-section {
+  position: relative; }
+  .heading-section .subheading {
+    font-size: 13px;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: #b6c1c3;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px; }
+    .heading-section a {
+        color: #55b311;
+        text-decoration: underline;
+    }
+  .heading-section h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.1;
+    font-family: 'AvenirNextLTPro-Regular';
+    margin-bottom: 35px;
+
+    }
+    .heading-section h4 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.1;
+    color:#7e8387;
+    margin-bottom: 35px;
+    font-family: 'AvenirNextLTPro-Regular';
+    }
+    .heading-section h2 span {
+      font-weight: 400; }
+    @media (max-width: 767.98px) {
+      .heading-section h2 {
+        font-size: 28px; } }
+  .heading-section.heading-section-white .subheading {
+    color: rgba(255, 255, 255, 0.9); }
+  .heading-section.heading-section-white h2 {
+    font-size: 40px;
+    color: #fff; }
+  .heading-section.heading-section-white p {
+    color: rgba(255, 255, 255, 0.9); }
+
+.d-flex{
+  margin-top: 30px;
+}
+
+/*!
+ * SlickNav Responsive Mobile Menu v1.0.10
+ * (c) 2016 Josh Cope
+ * licensed under MIT
+ */
+.slicknav_btn {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  float: right;
+  padding: 0.438em 0.625em 0.438em 0.625em;
+  line-height: 1.125em;
+  cursor: pointer; }
+  .slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
+    margin-top: 0.188em; }
+
+.slicknav_menu {
+  *zoom: 1; }
+  .slicknav_menu .slicknav_menutxt {
+    display: block;
+    line-height: 1.188em;
+    float: left; }
+  .slicknav_menu .slicknav_icon {
+    float: left;
+    width: 1.125em;
+    height: 0.875em;
+    margin: 0.188em 0 0 0.438em; }
+    .slicknav_menu .slicknav_icon:before {
+      background: transparent;
+      width: 1.125em;
+      height: 0.875em;
+      display: block;
+      content: "";
+      position: absolute; }
+  .slicknav_menu .slicknav_no-text {
+    margin: 0; }
+  .slicknav_menu .slicknav_icon-bar {
+    display: block;
+    width: 1.125em;
+    height: 0.125em;}
+  .slicknav_menu:before {
+    content: " ";
+    display: table; }
+  .slicknav_menu:after {
+    content: " ";
+    display: table;
+    clear: both; }
+
+.slicknav_nav {
+  clear: both; }
+  .slicknav_nav ul {
+    display: block; }
+  .slicknav_nav li {
+    display: block; }
+  .slicknav_nav .slicknav_arrow {
+    font-size: 0.8em;
+    margin: 0 0 0 0.4em; }
+  .slicknav_nav .slicknav_item {
+    cursor: pointer; }
+    .slicknav_nav .slicknav_item a {
+      display: inline; }
+  .slicknav_nav .slicknav_row {
+    display: block; }
+  .slicknav_nav a {
+    display: block; }
+  .slicknav_nav .slicknav_parent-link a {
+    display: inline; }
+
+.slicknav_brand {
+  float: left; }
+
+.slicknav_menu {
+  font-size: 16px;
+  box-sizing: border-box;
+  background: #4c4c4c;
+  padding: 5px; }
+  .slicknav_menu * {
+    box-sizing: border-box; }
+  .slicknav_menu .slicknav_menutxt {
+    color: #fff;
+    font-weight: bold; }
+  .slicknav_menu .slicknav_icon-bar {
+    background-color: #fff; }
+
+    .slicknav_btn {
+      
+      text-decoration: none;
+      background-color: none;
+    }
+
+  
+.slicknav_nav {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 0.875em;
+  list-style: none;
+  overflow: hidden; }
+  .slicknav_nav ul {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 0 0 20px; }
+  .slicknav_nav .slicknav_row {
+    padding: 5px 10px;
+    margin: 2px 5px; }
+    .slicknav_nav .slicknav_row:hover {
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      background: #ccc;
+      color: #fff; }
+  .slicknav_nav a {
+    padding: 5px 10px;
+    margin: 2px 5px;
+    text-decoration: none;
+    color: #fff; }
+    .slicknav_nav a:hover {
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      border-radius: 0px;
+      background: #ccc;
+      color: #222; }
+  .slicknav_nav .slicknav_txtnode {
+    margin-left: 15px; }
+  .slicknav_nav .slicknav_item a {
+    padding: 0;
+    margin: 0; }
+  .slicknav_nav .slicknav_parent-link a {
+    padding: 0;
+    margin: 0; }
+
+.slicknav_brand {
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 7px 12px;
+  height: 44px; }
+
+
+
+  /*===== mobile menu slicknav =====*/
+
+.mobile_menu {
+  position: absolute;
+  right: 10px;
+  width: 96%;
+  z-index: 99;
+}
+.slicknav_menu .slicknav_menutxt {
+    display: none;
+}
+.slicknav_menu {
+    background: transparent;
+    margin-top: 10px;
+}
+.slicknav_menu .slicknav_icon-bar {
+    background-color: #000;
+    height: 3px;
+    margin: 2px 0;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 30px;
+    position: relative;
+}
+
+/* .slicknav_menu .slicknav_open .slicknav_icon-bar:nth-child(2) {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.slicknav_menu .slicknav_open .slicknav_icon-bar:nth-child(1) {
+    -webkit-transform: rotate(45deg) translate(1px, 7px);
+    -ms-transform: rotate(45deg) translate(1px, 7px);
+        transform: rotate(45deg) translate(1px, 7px);
+}
+.slicknav_menu .slicknav_open .slicknav_icon-bar:nth-child(3) {
+    -webkit-transform: rotate(-45deg) translateY(-6px);
+    -ms-transform: rotate(-45deg) translateY(-6px);
+        transform: rotate(-45deg) translateY(-6px);
+        position: relative;
+        top: -1px;
+} */
+.slicknav_menu {
+  margin: 0;
+  padding: 0;
+}
+.slicknav_icon-bar {
+    background: #fff !important;
+}
+.slicknav_nav {
+  background: #fff;
+  float: right;
+  margin-top:0;
+  padding: 0;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.slicknav_nav a:hover {
+    background: #F79960 none repeat scroll 0 0;
+    border-radius: 0;
+    color: #ffffff;
+}
+
+.slicknav_nav a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #cccccc;
+    text-transform: capitalize;
+}
+
+.slicknav_nav li:hover {
+   opacity: 1;
+    background: #abca8b;
+    padding: 0px 40px;
+    padding-left: 0;
+    color: #fff;
+}
+.slicknav_nav li.current_page_item {
+    opacity: 1;
+    background: #abca8b;
+    padding: 0px 40px;
+    padding-left: 0;
+     color:#fff;
+}
+.slicknav_nav li.current_page_item a {
+   color:#fff;
+}
+
+.slicknav_nav .slicknav_arrow {
+    float: right;
+}
+
+.slicknav_nav .slicknav_row:hover,
+.slicknav_nav .slicknav_row:hover .slicknav_arrow {
+    border-radius: 0;
+    background-color: #F79960;
+    background-color: transparent;
+    color: #000;
+}
+
+
+.slicknav_menu .slicknav_icon {
+  margin-right: 6px;
+  margin-top: 3px;
+  position: relative;
+  right: 5px;
+  top: -5px;
+  padding-bottom: 3px;
+}
+
+.titulo-destacado{
+padding-left: 0;
+  }
